@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="search">
+      <input type="text" placeholder="enter a db character" id="char-name" />
+    <button type="button" id="get" onclick="fetchData()">get character</button>
+    </div>
+    
+    <div id="person">
+      <img
+      src=""
+      alt="YOUR DB CHARACTER"
+      id="db-character"/>
+      <div>
+        <h4>CHARACTER STATS</h4>
+        <p><strong>NAME: </strong><span id="name"></span></p>
+        <p><strong>GENDER: </strong><span id="gender"></span></p>
+        <p><strong>RACE: </strong><span id="race"></span></p>
+        <p><strong>KI: </strong><span id="ki"></span></p>
+        <p><strong>MAX KI: </strong><span id="maxki"></span></p>
+      </div>
+    </div>
+    
+    <script src="fetch.js"></script>
+  </body>
+</html>
