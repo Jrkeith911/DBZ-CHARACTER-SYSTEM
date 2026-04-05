@@ -2,6 +2,9 @@ async function fetchData() {
    try {
      const charName = document.getElementById("char-name").value.toLowerCase()
     const response = await fetch(`https://dragonball-api.com/api/characters?name=${charName}`)
+
+    
+    // throw error and print message if resource not found still unsolved to satisfaction 
     if (!response.ok || response.length === 0) {
         document.getElementById('person').innerText =  `we could not find the resource`
         throw new Error("we could not find the resource"); 
