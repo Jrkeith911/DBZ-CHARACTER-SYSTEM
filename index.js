@@ -9,7 +9,7 @@ async function fetchData() {
         document.getElementById('person').innerText =  `we could not find the resource`
         throw new Error("we could not find the resource"); 
     }
-    //check if the data is data empty
+    //check if the data is empty
     const data = await response.json()
     console.log(data);
     console.log(data[0].name);
