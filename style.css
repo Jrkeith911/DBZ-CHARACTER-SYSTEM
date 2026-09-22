@@ -1,16 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     display: flex;
     flex-flow: column nowrap;
-    /* justify-content: center; */
+    justify-content: center;
     text-align: center;
     align-items: center;
+    width: 75%;
+    border: 2px red dotted;
+    margin: 10%;
+
 }
 P:hover{
     background-color: rgba(162, 160, 44, 0.67);
 }
 #person{
     display: none;
-    
     width: 35vw;
     height: 70vh;
     margin: 0 25vw;
